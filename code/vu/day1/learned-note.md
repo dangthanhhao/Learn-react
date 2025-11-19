@@ -4,3 +4,5 @@ E.g:
 -Known how to create react app
 -Learned jsx syntax, create class and function component
 ...
+
+# để tạo: react
