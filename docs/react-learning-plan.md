@@ -62,6 +62,10 @@ Each day includes:
 -   "What happens inside ReactDOM.render()?"
 -   "Why do we import React in every component?"
 
+### 📝 Exercises
+
+[**📝 View Day 1 Exercises**](../react-exercises/Day1-Basics.md) - DynamicGreeting, WelcomeCard, UserProfile components
+
 ------------------------------------------------------------------------
 
 ## 🎣 Day 1.5 -- React Hooks Introduction
@@ -81,6 +85,10 @@ Each day includes:
 -   "Can I use hooks inside class components or nested functions?"
 -   "What's the difference between useState and this.state in class components?"
 -   "What are the rules of hooks?"
+
+### 📝 Exercises
+
+[**📝 View Day 1.5 Exercises**](../react-exercises/Day1.5-Hooks-Introduction.md) - useState basics, multiple state variables, hook rules, TodoItem component
 
 ------------------------------------------------------------------------
 
@@ -103,6 +111,10 @@ Each day includes:
 -   "Show me how useState works under the hood."
 -   "What happens when a parent passes a prop that changes?"
 
+### 📝 Exercises
+
+[**📝 View Day 2 Exercises**](../react-exercises/Day2-Props-State.md) - Props destructuring, useState hook, input handling
+
 ------------------------------------------------------------------------
 
 ## ⚡ Day 3 -- Event Handling & Conditional Rendering
@@ -123,6 +135,10 @@ Each day includes:
 -   "How do I prevent form submission with e.preventDefault()?"
 -   "Explain controlled vs uncontrolled inputs with examples."
 -   "What's the performance impact of arrow functions in event handlers?"
+
+### 📝 Exercises
+
+[**📝 View Day 3 Exercises**](../react-exercises/Day3-Conditional-Lists.md) - Conditional rendering, list rendering with .map(), product inventory
 
 ------------------------------------------------------------------------
 
@@ -145,6 +161,10 @@ Each day includes:
 -   "When should I use inline styles vs CSS files vs Tailwind?"
 -   "How do I apply dynamic classes based on state?"
 
+### 📝 Exercises
+
+[**📝 View Day 4 Exercises**](../react-exercises/Day4-Styling.md) - Inline styles, CSS files, responsive design patterns
+
 ------------------------------------------------------------------------
 
 ## 🧠 Day 4 -- Lists and Keys
@@ -165,6 +185,10 @@ Each day includes:
 -   "What happens if I use array index as a key?"
 -   "Show an example of bad key usage and its effects."
 -   "How does React use keys to match old elements with new ones?"
+
+### 📝 Exercises
+
+[**📝 View Day 3 Exercises**](../react-exercises/Day3-Conditional-Lists.md) - Conditional rendering, list rendering with .map(), product inventory
 
 ------------------------------------------------------------------------
 
@@ -187,6 +211,12 @@ Each day includes:
 -   "How do I prevent infinite loops in useEffect?"
 -   "What's the difference between running once, on change, or every render?"
 
+### 📝 Exercises
+
+[**📝 View Day 5 Exercises**](../react-exercises/Day5-useEffect-API.md) - useEffect lifecycle, API fetching, refetchable data
+
+------------------------------------------------------------------------
+
 ------------------------------------------------------------------------
 
 ## 🧩 Day 6 -- Forms and Two-Way Binding
@@ -208,6 +238,10 @@ Each day includes:
 -   "How can I manage multiple input fields efficiently?"
 -   "What's the difference between form libraries and manual state?"
 
+### 📝 Exercises
+
+[**📝 View Day 6 Exercises**](../react-exercises/Day6-Forms.md) - Form handling, validation, dynamic form fields
+
 ------------------------------------------------------------------------
 
 ## 📦 Day 7 -- Component Composition & Props Drilling
@@ -228,6 +262,10 @@ Each day includes:
 -   "How can I lift state up to the parent component?"
 -   "Explain how composition improves reusability."
 -   "When should I consider using Context instead of props?"
+
+### 📝 Exercises
+
+[**📝 View Day 7 Exercises**](../react-exercises/Day7-Composition.md) - Component hierarchy, prop drilling, container/presentational patterns
 
 ------------------------------------------------------------------------
 
@@ -270,6 +308,10 @@ Each day includes:
 -   "When should I use Context over props?"
 -   "Show an example of combining multiple contexts."
 -   "How do I avoid unnecessary re-renders with Context?"
+
+### 📝 Exercises
+
+[**📝 View Day 8 Exercises**](../react-exercises/Day8-Context-API.md) - Context API, useReducer, global state management
 
 ------------------------------------------------------------------------
 
@@ -317,6 +359,10 @@ Each day includes:
 -   "Can I pass data between routes and how?"
 -   "What's the difference between <Link> and <NavLink>?"
 
+### 📝 Exercises
+
+[**📝 View Day 9 Exercises**](../react-exercises/Day9-React-Router.md) - Routing, dynamic routes, query parameters
+
 ------------------------------------------------------------------------
 
 ## 🚀 Day 10 -- Testing React Components
@@ -335,6 +381,12 @@ Each day includes:
 
 -   "How do I test React components?"
 -   "What is React Testing Library and why use it over Enzyme?"
+
+### 📝 Exercises
+
+[**📝 View Day 10 Exercises**](../react-exercises/Day10-Testing.md) - React Testing Library, component testing, form testing, API mocking
+
+------------------------------------------------------------------------
 -   "How do I test useState and useEffect?"
 -   "What should I test and what should I avoid?"
 
@@ -358,6 +410,10 @@ Each day includes:
 -   "When should I use useRef and what are its use cases?"
 -   "How do I combine multiple hooks effectively?"
 
+### 📝 Exercises
+
+[**📝 View Day 11 Exercises**](../react-exercises/Day11-Advanced-Hooks.md) - useReducer, useRef, useCallback, useMemo
+
 ------------------------------------------------------------------------
 
 ## 💾 Day 12 -- State Management Alternatives
@@ -378,6 +434,10 @@ Each day includes:
 -   "What's the Redux flow: actions → reducers → store?"
 -   "How do I debug Redux with DevTools?"
 
+### 📝 Exercises
+
+[**📝 View Day 12 Exercises**](../react-exercises/Day12-State-Management.md) - Redux, Zustand, state management comparison
+
 ------------------------------------------------------------------------
 
 ## 🚀 Day 13 -- Final Project Part 1
@@ -395,6 +455,12 @@ Choose one project idea:
 ### 💬 Copilot Prompts
 
 -   "Help me structure this project efficiently."
+
+### 📝 Exercises & Projects
+
+[**📝 View Final Projects (Days 13-15)**](../react-exercises/Day13-15-Final-Projects.md) - Complete project specifications including Todo App, Weather App, E-Commerce Store, Blog, and Kanban Board
+
+------------------------------------------------------------------------
 -   "What folder structure should I use?"
 -   "How do I handle API errors gracefully?"
 
