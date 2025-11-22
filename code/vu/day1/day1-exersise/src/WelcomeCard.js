@@ -20,9 +20,7 @@ function WelcomeCard({ username, role, status, email, location }) {
 
 const styles = {
   card: {
-    // border: "2px solid #28a745",
     border: "3px dashed #ff6347",
-    // borderRadius: "8px",
     borderRadius: "15px",
     borderShadow: "2px 2px 12px rgba(0,0,0,0.1)",
     padding: "20px",
