@@ -96,6 +96,24 @@ Each day includes:
 
 **Objective:** Understand the building blocks of React apps.
 
+### ✅ Prerequisites
+
+Before starting Day 2 tasks, you need to understand `useState`:
+
+-   [ ] Read: ["State: A Component's Memory"](https://react.dev/learn/state-a-components-memory) from React docs.
+-   [ ] Read: ["Render and Commit"](https://react.dev/learn/render-and-commit) to understand how React updates state.
+-   [ ] Watch: [useState Basics](https://react.dev/reference/react/useState) - Official API reference.
+-   [ ] Understand the difference between **props** (read-only) and **state** (mutable).
+-   [ ] Know the rules of hooks (especially `useState`).
+
+### 💬 Copilot Prompts (Learn First)
+
+-   "Explain useState and how it works. Show me a simple counter example."
+-   "Why can't I mutate state directly? What happens if I do?"
+-   "What's the difference between props and state with real-world examples?"
+-   "How does React know when to re-render after state changes?"
+-   "Can I use useState multiple times in one component?"
+
 ### ✅ Tasks
 
 -   [ ] Create a reusable `<Greeting name="Barry" />` component.
@@ -121,6 +139,23 @@ Each day includes:
 
 **Objective:** Learn user interaction and conditional UI logic.
 
+### ✅ Prerequisites
+
+Before starting Day 3 tasks, understand event handling and conditional rendering:
+
+-   [ ] Read: ["Responding to Events"](https://react.dev/learn/responding-to-events) from React docs.
+-   [ ] Read: ["Conditional Rendering"](https://react.dev/learn/conditional-rendering) - Learn all patterns.
+-   [ ] Understand synthetic events vs native HTML events.
+-   [ ] Know the difference between ternary operator `? :` and `&&` for rendering.
+-   [ ] Understand event.preventDefault() and event.stopPropagation().
+
+### 💬 Copilot Prompts (Learn First)
+
+-   "What is a synthetic event in React and how does it differ from HTML events?"
+-   "How do I prevent form submission with e.preventDefault()?"
+-   "Show me all ways to do conditional rendering in React."
+-   "Explain ternary operators and && patterns with examples."
+
 ### ✅ Tasks
 
 -   [ ] Create a counter or show/hide text component with event handlers.
@@ -131,10 +166,9 @@ Each day includes:
 
 ### 💬 Copilot Prompts
 
--   "What is a synthetic event in React and how does it differ from HTML events?"
--   "How do I prevent form submission with e.preventDefault()?"
 -   "Explain controlled vs uncontrolled inputs with examples."
 -   "What's the performance impact of arrow functions in event handlers?"
+-   "How do I handle multiple event handlers in one component?"
 
 ### 📝 Exercises
 
@@ -146,6 +180,23 @@ Each day includes:
 
 **Objective:** Learn different approaches to style React components.
 
+### ✅ Prerequisites
+
+Before starting Day 3.5 tasks, understand styling approaches:
+
+-   [ ] Review: Inline styles in React (camelCase, object syntax).
+-   [ ] Read: ["CSS Modules"](https://create-react-app.dev/docs/adding-a-css-modules-stylesheet/) - Scoped styling.
+-   [ ] Optional: Explore [Tailwind CSS](https://tailwindcss.com/) for utility-first styling.
+-   [ ] Optional: Review [styled-components](https://styled-components.com/) for CSS-in-JS.
+-   [ ] Understand when to use each approach.
+
+### 💬 Copilot Prompts (Learn First)
+
+-   "What's the best way to style React components?"
+-   "Explain CSS Modules and why they're useful for large projects."
+-   "What are the pros and cons of inline styles vs CSS files vs Tailwind?"
+-   "Show me how to apply dynamic classes based on state."
+
 ### ✅ Tasks
 
 -   [ ] Use **inline styles**: `style={{ color: 'red', fontSize: '16px' }}`
@@ -156,10 +207,8 @@ Each day includes:
 
 ### 💬 Copilot Prompts
 
--   "What's the best way to style React components?"
--   "Explain CSS Modules and why they're useful for large projects."
--   "When should I use inline styles vs CSS files vs Tailwind?"
--   "How do I apply dynamic classes based on state?"
+-   "How do I transition between styles based on state changes?"
+-   "What's the performance impact of inline styles vs CSS files?"
 
 ### 📝 Exercises
 
@@ -171,6 +220,23 @@ Each day includes:
 
 **Objective:** Display arrays of data and learn why keys matter.
 
+### ✅ Prerequisites
+
+Before starting Day 4 tasks, understand list rendering and keys:
+
+-   [ ] Read: ["Rendering Lists"](https://react.dev/learn/rendering-lists) from React docs.
+-   [ ] Understand `.map()` function for rendering arrays.
+-   [ ] Learn why **keys** are essential for React's reconciliation.
+-   [ ] Know the difference between unique IDs and array indices as keys.
+-   [ ] Understand list reordering and why indices fail in dynamic lists.
+
+### 💬 Copilot Prompts (Learn First)
+
+-   "Why does React require keys in lists and what do they do?"
+-   "Show me why using array indices as keys is bad with an example."
+-   "How does React use keys to match old elements with new ones?"
+-   "What makes a good key in a React list?"
+
 ### ✅ Tasks
 
 -   [ ] Render a list of users or todos with `.map()`.
@@ -181,10 +247,8 @@ Each day includes:
 
 ### 💬 Copilot Prompts
 
--   "Why does React require keys in lists?"
--   "What happens if I use array index as a key?"
--   "Show an example of bad key usage and its effects."
--   "How does React use keys to match old elements with new ones?"
+-   "How do I generate unique IDs for list items?"
+-   "Can I use object properties as keys safely?"
 
 ### 📝 Exercises
 
@@ -196,6 +260,24 @@ Each day includes:
 
 **Objective:** Understand component lifecycle with `useEffect`.
 
+### ✅ Prerequisites
+
+Before starting Day 5 tasks, understand useEffect and lifecycle:
+
+-   [ ] Read: ["Synchronizing with Effects"](https://react.dev/learn/synchronizing-with-effects) from React docs.
+-   [ ] Read: ["useEffect"](https://react.dev/reference/react/useEffect) - Complete API reference.
+-   [ ] Understand component lifecycle: mount → update → unmount.
+-   [ ] Learn how dependency arrays control effect timing.
+-   [ ] Know when to use cleanup functions (for subscriptions, timers, etc.).
+-   [ ] Understand common pitfalls (infinite loops, race conditions).
+
+### 💬 Copilot Prompts (Learn First)
+
+-   "Explain component lifecycle and how useEffect fits in."
+-   "When does useEffect run and how do dependency arrays work?"
+-   "Show me examples of dependency arrays: [], [a], [a, b]."
+-   "What is the cleanup function and when should I use it?"
+
 ### ✅ Tasks
 
 -   [ ] Fetch data from `https://jsonplaceholder.typicode.com/users`.
@@ -206,10 +288,9 @@ Each day includes:
 
 ### 💬 Copilot Prompts
 
--   "When does useEffect run and how do dependency arrays work?"
--   "What is the cleanup function and when should I use it?"
 -   "How do I prevent infinite loops in useEffect?"
 -   "What's the difference between running once, on change, or every render?"
+-   "How do I handle race conditions in async useEffect?"
 
 ### 📝 Exercises
 
@@ -223,6 +304,23 @@ Each day includes:
 
 **Objective:** Handle input and form submission.
 
+### ✅ Prerequisites
+
+Before starting Day 6 tasks, understand form handling:
+
+-   [ ] Read: ["Handling Form Inputs"](https://react.dev/reference/react-dom/components/input) from React docs.
+-   [ ] Understand **controlled components** (value + onChange).
+-   [ ] Learn the difference from **uncontrolled components** (useRef).
+-   [ ] Know form validation patterns.
+-   [ ] Understand form reset and submission.
+
+### 💬 Copilot Prompts (Learn First)
+
+-   "Explain controlled vs uncontrolled components in forms."
+-   "What's two-way data binding and why do we use it?"
+-   "Show me how to manage multiple input fields efficiently."
+-   "What happens if I don't set value or onChange on an input?"
+
 ### ✅ Tasks
 
 -   [ ] Create a form with text, email, and checkbox fields.
@@ -233,10 +331,8 @@ Each day includes:
 
 ### 💬 Copilot Prompts
 
--   "Explain two-way data binding in React."
--   "What happens if I don't set value or onChange on an input?"
--   "How can I manage multiple input fields efficiently?"
 -   "What's the difference between form libraries and manual state?"
+-   "How do I handle file uploads in React forms?"
 
 ### 📝 Exercises
 
@@ -248,6 +344,23 @@ Each day includes:
 
 **Objective:** Organize components and understand prop passing.
 
+### ✅ Prerequisites
+
+Before starting Day 7 tasks, understand component composition:
+
+-   [ ] Read: ["Passing Props to a Component"](https://react.dev/learn/passing-props-to-a-component) from React docs.
+-   [ ] Read: ["Extracting Components"](https://react.dev/learn/extracting-components) - Breaking down components.
+-   [ ] Understand prop drilling and its limitations.
+-   [ ] Learn about lifting state up patterns.
+-   [ ] Know when to introduce Context API.
+
+### 💬 Copilot Prompts (Learn First)
+
+-   "What's prop drilling and when does it become a problem?"
+-   "Explain how to lift state up to the parent component."
+-   "Show me how composition improves reusability."
+-   "When should I consider using Context instead of props?"
+
 ### ✅ Tasks
 
 -   [ ] Create a `TodoList` and `TodoItem` component hierarchy.
@@ -258,10 +371,8 @@ Each day includes:
 
 ### 💬 Copilot Prompts
 
--   "What's prop drilling and when does it become a problem?"
--   "How can I lift state up to the parent component?"
--   "Explain how composition improves reusability."
--   "When should I consider using Context instead of props?"
+-   "What are presentational vs container components?"
+-   "How do I create reusable component patterns?"
 
 ### 📝 Exercises
 
@@ -273,6 +384,23 @@ Each day includes:
 
 **Objective:** Extract reusable logic into custom hooks.
 
+### ✅ Prerequisites
+
+Before starting Day 7.5 tasks, understand custom hooks:
+
+-   [ ] Read: ["Reusing Logic with Custom Hooks"](https://react.dev/learn/reusing-logic-with-custom-hooks) from React docs.
+-   [ ] Understand custom hook rules and patterns.
+-   [ ] Know the `use` prefix naming convention.
+-   [ ] Learn how to extract common patterns into hooks.
+-   [ ] Understand hook composition (hooks calling other hooks).
+
+### 💬 Copilot Prompts (Learn First)
+
+-   "What makes a valid custom hook and what are the rules?"
+-   "Explain how to share logic between components with custom hooks."
+-   "Show me how to build a reusable useFetch hook."
+-   "Can custom hooks return JSX or only values?"
+
 ### ✅ Tasks
 
 -   [ ] Create `useLocalStorage` hook to persist data to browser storage.
@@ -283,16 +411,31 @@ Each day includes:
 
 ### 💬 Copilot Prompts
 
--   "What makes a valid custom hook?"
--   "How do I share logic between components with custom hooks?"
--   "Show me how to build a reusable useFetch hook."
--   "Can custom hooks return JSX or only values?"
+-   "How do I debug custom hooks?"
+-   "What's the best way to structure complex custom hook logic?"
 
 ------------------------------------------------------------------------
 
 ## ⚡ Day 8 -- Context API
 
 **Objective:** Share state globally without prop drilling.
+
+### ✅ Prerequisites
+
+Before starting Day 8 tasks, understand Context API:
+
+-   [ ] Read: ["Context API"](https://react.dev/learn/passing-data-deeply-with-context) from React docs.
+-   [ ] Read: ["useContext Hook"](https://react.dev/reference/react/useContext) - Complete API reference.
+-   [ ] Understand when Context is better than props.
+-   [ ] Know how to create and provide context.
+-   [ ] Learn about Context performance optimization.
+
+### 💬 Copilot Prompts (Learn First)
+
+-   "Explain how Context works and when to use it instead of props."
+-   "Show me how to create and provide a Context."
+-   "Can I combine multiple contexts? Show an example."
+-   "How do I avoid unnecessary re-renders with Context?"
 
 ### ✅ Tasks
 
@@ -304,10 +447,8 @@ Each day includes:
 
 ### 💬 Copilot Prompts
 
--   "Explain how Context works in React."
--   "When should I use Context over props?"
--   "Show an example of combining multiple contexts."
--   "How do I avoid unnecessary re-renders with Context?"
+-   "How do I split Context for better performance?"
+-   "What's the difference between Context and Redux?"
 
 ### 📝 Exercises
 
@@ -319,6 +460,23 @@ Each day includes:
 
 **Objective:** Learn to optimize React apps for performance.
 
+### ✅ Prerequisites
+
+Before starting Day 8.5 tasks, understand performance optimization:
+
+-   [ ] Read: ["React.memo"](https://react.dev/reference/react/memo) - Preventing unnecessary re-renders.
+-   [ ] Read: ["useMemo"](https://react.dev/reference/react/useMemo) - Memoizing expensive calculations.
+-   [ ] Read: ["useCallback"](https://react.dev/reference/react/useCallback) - Memoizing callbacks.
+-   [ ] Understand when optimization is necessary vs premature optimization.
+-   [ ] Know how to measure performance with React DevTools Profiler.
+
+### 💬 Copilot Prompts (Learn First)
+
+-   "When should I use React.memo and what are its limitations?"
+-   "What's the difference between useMemo and useCallback?"
+-   "Explain common causes of unnecessary re-renders."
+-   "How do I profile React app performance with DevTools?"
+
 ### ✅ Tasks
 
 -   [ ] Use `React.memo()` to prevent unnecessary re-renders.
@@ -329,16 +487,31 @@ Each day includes:
 
 ### 💬 Copilot Prompts
 
--   "When should I use React.memo and what are its limitations?"
--   "What's the difference between useMemo and useCallback?"
--   "How do I profile React app performance?"
--   "What causes unnecessary re-renders and how do I fix them?"
+-   "What's the performance cost of optimization itself?"
+-   "How do I balance code readability with performance?"
 
 ------------------------------------------------------------------------
 
 ## 🧭 Day 9 -- React Router
 
 **Objective:** Implement multiple pages using React Router.
+
+### ✅ Prerequisites
+
+Before starting Day 9 tasks, understand React Router:
+
+-   [ ] Read: ["React Router"](https://reactrouter.com/) - Official documentation.
+-   [ ] Understand routing concepts: BrowserRouter, Routes, Route.
+-   [ ] Learn the difference between `<Link>` and `<NavLink>`.
+-   [ ] Know how to create dynamic routes with URL parameters (`:id`).
+-   [ ] Understand programmatic navigation with `useNavigate()`.
+
+### 💬 Copilot Prompts (Learn First)
+
+-   "Explain how routing works in React Router."
+-   "What's the difference between <Link>, <NavLink>, and useNavigate?"
+-   "Show me how to create dynamic routes with URL parameters."
+-   "How do I pass data between routes?"
 
 ### ✅ Tasks
 
@@ -354,10 +527,8 @@ Each day includes:
 
 ### 💬 Copilot Prompts
 
--   "Explain BrowserRouter, Routes, and Route components."
--   "How do I navigate programmatically with useNavigate?"
--   "Can I pass data between routes and how?"
--   "What's the difference between <Link> and <NavLink>?"
+-   "How do I handle nested routes?"
+-   "What's the difference between hash routes and browser history?"
 
 ### 📝 Exercises
 
@@ -369,6 +540,23 @@ Each day includes:
 
 **Objective:** Write tests to ensure components work correctly.
 
+### ✅ Prerequisites
+
+Before starting Day 10 tasks, understand React testing:
+
+-   [ ] Read: ["React Testing Library"](https://testing-library.com/react) - Official guide.
+-   [ ] Understand testing principles: what to test, what not to test.
+-   [ ] Learn query selectors: getByRole, getByText, getByTestId.
+-   [ ] Know how to test user interactions (fireEvent, userEvent).
+-   [ ] Understand async queries and waitFor().
+
+### 💬 Copilot Prompts (Learn First)
+
+-   "What is React Testing Library and why use it over Enzyme?"
+-   "Explain how to test React components effectively."
+-   "Show me how to test useState and useEffect."
+-   "What should I test and what should I avoid?"
+
 ### ✅ Tasks
 
 -   [ ] Install testing library: `npm install @testing-library/react`
@@ -379,22 +567,35 @@ Each day includes:
 
 ### 💬 Copilot Prompts
 
--   "How do I test React components?"
--   "What is React Testing Library and why use it over Enzyme?"
+-   "How do I mock API calls in React tests?"
+-   "What's the difference between fireEvent and userEvent?"
 
 ### 📝 Exercises
 
 [**📝 View Day 10 Exercises**](../react-exercises/Day10-Testing.md) - React Testing Library, component testing, form testing, API mocking
 
 ------------------------------------------------------------------------
--   "How do I test useState and useEffect?"
--   "What should I test and what should I avoid?"
-
-------------------------------------------------------------------------
 
 ## 🎯 Day 11 -- Advanced Hooks Deep Dive
 
 **Objective:** Master less common but powerful hooks.
+
+### ✅ Prerequisites
+
+Before starting Day 11 tasks, understand advanced hooks:
+
+-   [ ] Read: ["useReducer"](https://react.dev/reference/react/useReducer) - Complex state management.
+-   [ ] Read: ["useRef"](https://react.dev/reference/react/useRef) - Accessing DOM directly.
+-   [ ] Understand when useState is insufficient (complex state logic).
+-   [ ] Know useRef use cases: form focus, timers, animations.
+-   [ ] Learn imperative vs declarative patterns.
+
+### 💬 Copilot Prompts (Learn First)
+
+-   "Explain the difference between useState and useReducer."
+-   "Show me a useReducer example with complex state logic."
+-   "When should I use useRef and what are its use cases?"
+-   "How do I access DOM elements directly with useRef?"
 
 ### ✅ Tasks
 
@@ -406,9 +607,8 @@ Each day includes:
 
 ### 💬 Copilot Prompts
 
--   "What's the difference between useState and useReducer?"
--   "When should I use useRef and what are its use cases?"
 -   "How do I combine multiple hooks effectively?"
+-   "What are uncontrolled components and when should I use them?"
 
 ### 📝 Exercises
 
@@ -420,6 +620,23 @@ Each day includes:
 
 **Objective:** Explore alternatives to Context API for large apps.
 
+### ✅ Prerequisites
+
+Before starting Day 12 tasks, understand state management solutions:
+
+-   [ ] Read: ["Redux Fundamentals"](https://redux.js.org/fundamentals/getting-started) or ["Zustand"](https://github.com/pmndrs/zustand).
+-   [ ] Understand Redux architecture: actions, reducers, store, dispatch.
+-   [ ] Know when to use Redux vs Context API vs Zustand.
+-   [ ] Learn middleware and thunks for async actions.
+-   [ ] Understand Redux DevTools for debugging.
+
+### 💬 Copilot Prompts (Learn First)
+
+-   "Explain the Redux flow: actions → reducers → store."
+-   "When should I use Redux instead of Context API?"
+-   "Show me how to handle async actions with Redux."
+-   "What are the pros and cons of Redux vs Zustand?"
+
 ### ✅ Tasks
 
 -   [ ] Learn about **Redux** or **Zustand** (choose one).
@@ -430,9 +647,8 @@ Each day includes:
 
 ### 💬 Copilot Prompts
 
--   "What is Redux and why use it over Context?"
--   "What's the Redux flow: actions → reducers → store?"
 -   "How do I debug Redux with DevTools?"
+-   "What's the performance impact of Redux vs Context?"
 
 ### 📝 Exercises
 
@@ -444,6 +660,21 @@ Each day includes:
 
 **Objective:** Build a substantial project combining all learned concepts.
 
+### ✅ Prerequisites
+
+Before starting Day 13 tasks, review project planning:
+
+-   [ ] Review all React concepts from Days 1-12.
+-   [ ] Read: ["Thinking in React"](https://react.dev/learn/thinking-in-react) - Project planning approach.
+-   [ ] Understand component structure and state management for your project.
+-   [ ] Plan your project architecture before coding.
+
+### 💬 Copilot Prompts (Learn First)
+
+-   "Help me structure this project efficiently."
+-   "What folder structure should I use for a React app?"
+-   "What state management approach should I use for this project?"
+
 ### ✅ Tasks
 
 Choose one project idea:
@@ -454,21 +685,34 @@ Choose one project idea:
 
 ### 💬 Copilot Prompts
 
--   "Help me structure this project efficiently."
+-   "How do I handle API errors gracefully?"
+-   "What best practices should I follow in this project?"
 
 ### 📝 Exercises & Projects
 
 [**📝 View Final Projects (Days 13-15)**](../react-exercises/Day13-15-Final-Projects.md) - Complete project specifications including Todo App, Weather App, E-Commerce Store, Blog, and Kanban Board
 
 ------------------------------------------------------------------------
--   "What folder structure should I use?"
--   "How do I handle API errors gracefully?"
-
-------------------------------------------------------------------------
 
 ## 🎨 Day 14 -- Final Project Part 2 & Styling
 
 **Objective:** Polish your project with professional styling and UX.
+
+### ✅ Prerequisites
+
+Before starting Day 14 tasks, understand advanced styling and UX:
+
+-   [ ] Read: ["Error Boundaries"](https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary) - Error handling UI.
+-   [ ] Review responsive design principles (mobile-first).
+-   [ ] Learn about loading states and skeleton screens.
+-   [ ] Understand accessibility (a11y) best practices.
+
+### 💬 Copilot Prompts (Learn First)
+
+-   "What's an error boundary and how do I implement it?"
+-   "How do I add animations and transitions to React components?"
+-   "What makes a good user experience in web apps?"
+-   "How do I make my React app accessible (a11y)?"
 
 ### ✅ Tasks
 
@@ -480,12 +724,28 @@ Choose one project idea:
 
 ### 💬 Copilot Prompts
 
--   "What's an error boundary and how do I implement it?"
--   "How do I add animations to React components?"
--   "What makes a good user experience?"
+-   "How do I optimize images and assets for performance?"
+-   "What SEO considerations exist for React apps?"
 
 ------------------------------------------------------------------------
 
 ## 🌟 Day 15 -- Deployment & Next Steps
 
 **Objective:** Deploy your project and plan advanced learning.
+
+### ✅ Prerequisites
+
+Before starting Day 15 tasks, understand deployment:
+
+-   [ ] Read: ["Building & Deploying"](https://create-react-app.dev/docs/deployment/) - Create React App guide.
+-   [ ] Explore [Vercel](https://vercel.com/), [Netlify](https://netlify.com/), or [GitHub Pages](https://pages.github.com/).
+-   [ ] Understand environment variables and secrets management.
+-   [ ] Learn about CI/CD pipelines.
+
+### 💬 Copilot Prompts (Learn First)
+
+-   "What are the best ways to deploy a React app?"
+-   "How do I set up environment variables for production?"
+-   "What's a CI/CD pipeline and why is it useful?"
+
+### ✅ Tasks
