@@ -1,9 +1,13 @@
 import CounterWithHook from "./CounterWithHook";
+import UserProfile from "./UserProfile";
+import TodoList from "./TodoList";
 
 function App() {
   return (
     <div className="App">
-      <CounterWithHook/>
+      <CounterWithHook />
+      <UserProfile />
+      <TodoList />
     </div>
   );
 }
