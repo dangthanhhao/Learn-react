@@ -1,15 +1,13 @@
 import React, { useState } from "react";
 
 // TodoItem Component
-function TodoItem({ id, title, onDelete, onToggle, onEdit, priority, dueDate }) {
-  const [isComplete, setIsComplete] = useState(false);
+function TodoItem({ id, title, onDelete, onToggle, onEdit, priority, dueDate, isComplete }) {
   const [createdAt] = useState(new Date().toLocaleDateString());
   const [isEditing, setIsEditing] = useState(false);
   const [newTitle, setNewTitle] = useState(title);
 
   // Handle toggle complete
   const handleToggle = () => {
-    setIsComplete(!isComplete);
     onToggle(id); // Notify parent about the change
   };
 
@@ -132,9 +130,9 @@ function TodoItem({ id, title, onDelete, onToggle, onEdit, priority, dueDate }) 
 // TodoList Component (Parent)
 function TodoList() {
   const [todos, setTodos] = useState([
-    { id: 1, title: "Learn React", priority: "high", dueDate: "2025-11-30" },
-    { id: 2, title: "Practice JavaScript", priority: "medium", dueDate: "2025-12-05" },
-    { id: 3, title: "Build a Todo App", priority: "low", dueDate: "2025-12-15" },
+    { id: 1, title: "Learn React", priority: "high", dueDate: "2025-11-30", isComplete: false },
+    { id: 2, title: "Practice JavaScript", priority: "medium", dueDate: "2025-12-05", isComplete: false },
+    { id: 3, title: "Build a Todo App", priority: "low", dueDate: "2025-12-15", isComplete: false },
   ]);
 
   const [newTodo, setNewTodo] = useState({
@@ -150,7 +148,11 @@ function TodoList() {
 
   // Handle toggle
   const handleToggle = (id) => {
-    console.log(`Todo with id ${id} toggled!`);
+    setTodos(
+      todos.map((todo) =>
+        todo.id === id ? { ...todo, isComplete: !todo.isComplete } : todo
+      )
+    );
   };
 
   // Handle edit
@@ -231,6 +233,7 @@ function TodoList() {
           title={todo.title}
           priority={todo.priority}
           dueDate={todo.dueDate}
+          isComplete={todo.isComplete}
           onDelete={handleDelete}
           onToggle={handleToggle}
           onEdit={handleEdit}

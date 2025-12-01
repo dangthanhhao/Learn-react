@@ -122,7 +122,7 @@ React Hook "useState" is called conditionally. React Hooks must be called in the
    + isComplete: Quản lý trạng thái hoàn thành.
    + isEditing: Quản lý trạng thái chỉnh sửa.
    + newTitle: Tiêu đề mới khi chỉnh sửa.
-b. <TodoList /> (Component cha):
+## b. <TodoList /> (Component cha):
 - Trạng thái cục bộ:
    + todos: Danh sách công việc.
    + newTodo: Công việc mới đang nhập (dữ liệu từ form).

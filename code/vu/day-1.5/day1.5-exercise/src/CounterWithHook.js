@@ -12,7 +12,7 @@ function CounterWithHook() {
                 Increment
             </button>
 
-            <button onClick={() => setCount(count -1)}>
+            <button onClick={() => setCount(count - 1)}>
                 Decrement
             </button>
 
