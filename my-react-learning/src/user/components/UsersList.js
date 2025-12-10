@@ -1,10 +1,15 @@
 import "./UsersList.css";
 
 import UserItem from "./UserItem";
+import Card from "../../shared/components/UIElements/Card";
 
 const UsersList = (props) => {
   if (!props.items || props.items.length === 0) {
-    return <div className="center">No users found.</div>;
+    return (
+      <div className="center">
+        <Card>No users found.</Card>
+      </div>
+    );
   }
 
   return (
